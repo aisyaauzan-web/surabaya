@@ -1301,6 +1301,7 @@ initCarousel(
  (function() {
  const path = window.location.pathname.toLowerCase();
  const city = path.includes('auzanaisya') ? 'surabaya'
+ : path.includes('surabaya') ? 'surabaya'
  : path.includes('aisyaauzan') ? 'kediri'
  : 'None';
  document.getElementById('rsvp-city').value = city;
@@ -1328,6 +1329,7 @@ initCarousel(
  // Re-apply city after reset
  const url = window.location.pathname.toLowerCase();
  const city = url.includes('auzanaisya') ? 'surabaya'
+ : url.includes('surabaya') ? 'surabaya'
  : url.includes('aisyaauzan') ? 'kediri'
  : 'None';
  document.getElementById('rsvp-city').value = city;
